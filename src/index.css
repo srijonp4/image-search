@@ -1,0 +1,33 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background: #70e1f5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffd194,
+    #70e1f5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffd194,
+    #70e1f5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.image-container {
+  max-width: 100%; /* Ensure the container does not exceed the width of its parent */
+  display: inline-block; /* Make the container inline-block to adapt to the image's size */
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+/* Style the image to make it responsive */
+.image-container img {
+  max-width: 100%; /* Ensure the image does not exceed the width of its container */
+  height: auto; /* Automatically adjust the image height to maintain aspect ratio */
+}
